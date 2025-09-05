@@ -69,7 +69,7 @@ const Home = () => {
                       Hi, I'm
                     </span>
                     <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent block">
-                      Yugeshkaran 
+                      Yugeshkaran Panjamoorthi
                     </span>
                   </motion.h1>
                   
