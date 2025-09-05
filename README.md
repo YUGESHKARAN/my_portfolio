@@ -1,4 +1,4 @@
-# My Portfolio
+# Yugeshkaran Panjamoorthi - Portfolio
 
 [![GitHub](https://img.shields.io/badge/GitHub-my_portfolio-blue?logo=github)](https://github.com/YUGESHKARAN/my_portfolio)
 
