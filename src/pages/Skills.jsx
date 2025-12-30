@@ -12,7 +12,7 @@ const Skills = () => {
     skills: [
       { name: 'React', projects: 12 },
       { name: 'JavaScript', projects: 15 },
-      { name: 'HTML/CSS', projects: 10 },
+      { name: 'HTML', projects: 10 },
       { name: 'Tailwind CSS', projects: 9 },
       { name: 'Vite.js', projects: 6 },
     ],
@@ -26,8 +26,7 @@ const Skills = () => {
       // { name: 'Socket.io', projects: 10 },
       { name: 'Flask', projects: 7 },
       // { name: 'mysql-conector-python', projects: 7 },
-      { name: 'Mongoose', projects: 4 },
-      { name: 'Dynamoose', projects: 4 },
+      { name: 'Mongoose', projects: 4 }
     ],
   },
   {
@@ -35,7 +34,6 @@ const Skills = () => {
     title: 'Database',
     skills: [
       { name: 'MongoDB', projects: 9 },
-      { name: 'DynamoDB', projects: 4 },
       { name: 'MySQL', projects: 5 },
       { name: 'Pinecone', projects: 3 },
     
@@ -79,7 +77,7 @@ const Skills = () => {
   ,
   {
     icon: Cloud,
-    title: 'Data Scinece Packages & Frameworks',
+    title: 'Data Science Packages & Frameworks',
     skills: [
   
       { name: 'Pytorch', projects: 6 },
@@ -88,7 +86,7 @@ const Skills = () => {
       { name: 'Pandas', projects: 16 },
       // { name: 'Matplotlib', projects: 16 },
       { name: 'Scikit-Learn', projects: 16 },
-      // { name: 'Numpy', projects: 16 },
+      { name: 'Numpy', projects: 16 },
     ],
   },
 ];
