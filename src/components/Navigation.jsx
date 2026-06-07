@@ -33,8 +33,8 @@ const Navigation = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex-shrink-0"
           >
-            <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Portfolio
+            <Link to="/" className="md:text-2xl text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              Yugeshkaran P
             </Link>
           </motion.div>
 

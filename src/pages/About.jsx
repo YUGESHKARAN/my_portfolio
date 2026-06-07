@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { User, MapPin, Calendar, Award, } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
+import profile from "../images/yugeshkaran.png"
 
 const About = () => {
   const containerVariants = {
@@ -40,24 +41,25 @@ const About = () => {
   return (
     <PageTransition>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 pt-20">
-        <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="max-w-6xl mx-auto px-4  md:py-16">
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="grid lg:grid-cols-2 gap-16 items-center"
+            className="grid lg:grid-cols-2 gap-16 items-start"
           >
             {/* Profile Image */}
             <motion.div variants={itemVariants} className="relative">
-              <div className="relative w-full max-w-md mx-auto">
+              <div className="relative w-full max-w-sm mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur-xl opacity-30"></div>
                 <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
-                  <div className="w-48 h-48 mx-auto bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
-                    <User size={80} className="text-white" />
+                  <div className="w-48 h-48 mx-auto bg-white rounded-full flex items-center justify-center mb-3">
+                    {/* <User size={80} className="text-white" /> */}
+                    <img src={profile} className='w-48 h-48 object-contain rounded-full' alt="" />
                   </div>
                   <div className="text-center">
                     <h3 className="text-2xl font-bold text-white mb-2">Yugeshkaran P.</h3>
-                    <p className="text-blue-400 font-medium">Full-Stack Developer</p>
+                    <p className="text-blue-400 font-medium">AI Engineer</p>
                   </div>
                 </div>
               </div>
@@ -76,7 +78,7 @@ const About = () => {
 
               <motion.div variants={itemVariants} className="space-y-6 text-gray-300 text-lg leading-relaxed">
                 <p>
-                As an AI enthusiast, I focus on creating innovations that address real-time problems, contributing to both my personal growth and the success of my company.
+               Full Stack Developer with expertise in designing and developing software, Generative AI products (Retrieval-Augmented Generation systems), and application-specific agentic copilots.
                 </p>
                 
                 {/* <p>

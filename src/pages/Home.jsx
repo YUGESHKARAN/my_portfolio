@@ -8,6 +8,8 @@ import PageTransition from '../components/PageTransition';
 import { Link } from 'react-router-dom';
 import About from './About';
 
+
+
 const Home = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -44,11 +46,11 @@ const Home = () => {
         <ParticleBackground />
         
         {/* Hero Section */}
-        <div className="min-h-screen relative">
+        <div className="md:min-h-screen relative">
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm" />
           
-          <div className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+          <div className="relative z-10 md:min-h-screen mt-24 md:flex items-center justify-start md:justify-center px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto w-full">
               <motion.div
                 variants={containerVariants}
@@ -57,7 +59,7 @@ const Home = () => {
                 className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"
               >
                 {/* Text Content */}
-                <div className="text-left order-2 lg:order-1">
+                <div className="text-left py-6 md:py-0  order-1">
                   <motion.div variants={itemVariants} className="mb-4 sm:mb-6">
                     <span className="inline-block px-3 sm:px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-xs sm:text-sm font-medium backdrop-blur-sm">
                       Welcome to my portfolio
@@ -94,7 +96,7 @@ const Home = () => {
                     <motion.a
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      href='/Yugeshkaran_Resume_SoftwareEngineer.pdf'
+                      href='/Yugeshkaran_AI_Engineer_Resume.pdf'
                       className="px-6 cursor-pointer sm:px-8 py-3 sm:py-4 border-2 border-gray-600 text-white rounded-lg font-semibold flex items-center justify-center gap-2 hover:border-blue-400 hover:text-blue-400 transition-all duration-300 text-sm sm:text-base"
                     >
                       <Download size={18} />
@@ -112,7 +114,7 @@ const Home = () => {
                 </div>
                 
                 {/* 3D Graphics */}
-                <motion.div variants={itemVariants} className="relative order-1 lg:order-2">
+                <motion.div variants={itemVariants} className="relative order-1 md:block hidden lg:order-2">
                   <div className="w-full h-48 sm:h-64 md:h-80 max-w-md mx-auto lg:max-w-none">
                     <Hero3D />
                   </div>
