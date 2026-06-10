@@ -36,6 +36,7 @@ const Skills = () => {
       { name: 'MongoDB', projects: 9 },
       { name: 'MySQL', projects: 5 },
       { name: 'Pinecone', projects: 3 },
+      { name: 'Redis', projects: 3 },
     
     ],
   },

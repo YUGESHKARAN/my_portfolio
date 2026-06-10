@@ -28,7 +28,7 @@ const Projects = () => {
       image: bytesbase,
       tags: ['React.js', 'Node.js','Socket.io', 'Express.js', 'MongoDB','Tailwind CSS','LLM','AWS-S3-bucket'],
       githubUrl: 'https://github.com/YUGESHKARAN/Node-Blog-App.git',
-      liveUrl: 'https://blog-frontend-teal-ten.vercel.app/',
+      liveUrl: 'https://www.bytesbase.me/',
       featured: true,
     },
 

@@ -22,6 +22,10 @@ const Contact = () => {
     });
   };
 
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const USER_ID = import.meta.env.VITE_USER_ID;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -29,10 +33,10 @@ const Contact = () => {
     try {
       // Replace with your EmailJS service ID, template ID, and user ID
       await emailjs.send(
-        'service_yxhaf7j',
-        'template_qxwe6ub',
+         SERVICE_ID,
+        TEMPLATE_ID,
         formData,
-        '1EjPSm0Gnbk-0OdLt'
+        USER_ID
       );
       setIsSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
