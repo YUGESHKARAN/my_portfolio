@@ -1,16 +1,16 @@
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
-import emailjs from 'emailjs-com';
-import PageTransition from '../components/PageTransition';
+import PageTransition from "../components/PageTransition";
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -22,28 +22,30 @@ const Contact = () => {
     });
   };
 
-  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
-  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
-  const USER_ID = import.meta.env.VITE_USER_ID;
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // Replace with your EmailJS service ID, template ID, and user ID
-      await emailjs.send(
-         SERVICE_ID,
-        TEMPLATE_ID,
+      const response = await axios.post(
+        // "http://127.0.0.1:3000/portfolio/contact",
+        "https://protfolio-email-service.vercel.app/portfolio/contact",
         formData,
-        USER_ID
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        },
       );
+      
+      if(response.status === 200)
+      {
       setIsSubmitted(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      }
     } catch (error) {
-  console.error('Error sending email:', error);
-  alert(error.text || error.message || "EmailJS error");
-
+      console.error("Error sending email:", error);
+      alert(error.text || error.message || "EmailJS error");
     } finally {
       setIsSubmitting(false);
     }
@@ -52,15 +54,15 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
-      value: 'yugeshkaran01@gmail.com',
-      href: 'mailto:yugeshkaran01@gmail.com',
+      title: "Email",
+      value: "yugeshkaran01@gmail.com",
+      href: "mailto:yugeshkaran01@gmail.com",
     },
     {
       icon: Phone,
-      title: 'Phone',
-      value: '+91 7397592742',
-      href: 'tel:+917397592742',
+      title: "Phone",
+      value: "+91 7397592742",
+      href: "tel:+917397592742",
     },
     // {
     //   icon: MapPin,
@@ -116,7 +118,9 @@ const Contact = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
               {/* Contact Information */}
               <motion.div variants={itemVariants}>
-                <h2 className="md:text-2xl text-xl font-bold text-white mb-8">Contact Information</h2>
+                <h2 className="md:text-2xl text-xl font-bold text-white mb-8">
+                  Contact Information
+                </h2>
                 <div className="space-y-6">
                   {contactInfo.map((info, index) => (
                     <motion.a
@@ -129,22 +133,29 @@ const Contact = () => {
                         <info.icon className="text-blue-400" size={24} />
                       </div>
                       <div>
-                        <h3 className="text-white text-sm md:text-base font-medium">{info.title}</h3>
-                        <p className="text-gray-300 text-sm md:text-base">{info.value}</p>
+                        <h3 className="text-white text-sm md:text-base font-medium">
+                          {info.title}
+                        </h3>
+                        <p className="text-gray-300 text-sm md:text-base">
+                          {info.value}
+                        </p>
                       </div>
                     </motion.a>
                   ))}
                 </div>
 
                 <motion.div variants={itemVariants} className="mt-12">
-                  <h3 className="text-xl font-bold text-white mb-4">Let's Connect</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">
+                    Let's Connect
+                  </h3>
                   <p className="text-gray-300 mb-6 md:text-xl text-base">
-                    I'm always open to discussing new opportunities, interesting projects, 
-                    or just having a chat about technology and development.
+                    I'm always open to discussing new opportunities, interesting
+                    projects, or just having a chat about technology and
+                    development.
                   </p>
                   <div className="flex space-x-4">
                     <motion.a
-                    href='mailto:yugeshkaran01@gmail.com'
+                      href="mailto:yugeshkaran01@gmail.com"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="p-3 bg-blue-500/20 text-blue-400 rounded-lg hover:bg-blue-500/30 transition-colors"
@@ -152,7 +163,7 @@ const Contact = () => {
                       <Mail size={20} />
                     </motion.a>
                     <motion.a
-                      href='tel:+917397592742'
+                      href="tel:+917397592742"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       className="p-3 bg-blue-500/20 text-blue-400 rounded-lg hover:bg-blue-500/30 transition-colors"
@@ -172,8 +183,13 @@ const Contact = () => {
                       animate={{ opacity: 1, scale: 1 }}
                       className="text-center py-8"
                     >
-                      <CheckCircle className="text-green-400 mx-auto mb-4" size={48} />
-                      <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
+                      <CheckCircle
+                        className="text-green-400 mx-auto mb-4"
+                        size={48}
+                      />
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        Message Sent!
+                      </h3>
                       <p className="text-gray-300">
                         Thank you for reaching out. I'll get back to you soon.
                       </p>
@@ -182,7 +198,10 @@ const Contact = () => {
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid md:grid-cols-2 gap-6">
                         <div>
-                          <label htmlFor="name" className="block text-white font-medium mb-2">
+                          <label
+                            htmlFor="name"
+                            className="block text-white font-medium mb-2"
+                          >
                             Name
                           </label>
                           <input
@@ -197,7 +216,10 @@ const Contact = () => {
                           />
                         </div>
                         <div>
-                          <label htmlFor="email" className="block text-white font-medium mb-2">
+                          <label
+                            htmlFor="email"
+                            className="block text-white font-medium mb-2"
+                          >
                             Email
                           </label>
                           <input
@@ -212,9 +234,12 @@ const Contact = () => {
                           />
                         </div>
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="subject" className="block text-white font-medium mb-2">
+                        <label
+                          htmlFor="subject"
+                          className="block text-white font-medium mb-2"
+                        >
                           Subject
                         </label>
                         <input
@@ -228,9 +253,12 @@ const Contact = () => {
                           placeholder="What's this about?"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="message" className="block text-white font-medium mb-2">
+                        <label
+                          htmlFor="message"
+                          className="block text-white font-medium mb-2"
+                        >
                           Message
                         </label>
                         <textarea
@@ -244,7 +272,7 @@ const Contact = () => {
                           placeholder="Tell me about your project..."
                         />
                       </div>
-                      
+
                       <motion.button
                         type="submit"
                         disabled={isSubmitting}
