@@ -1,6 +1,6 @@
 # Yugeshkaran Panjamoorthi - Portfolio
 
-[![GitHub](https://img.shields.io/badge/GitHub-my_portfolio-blue?logo=github)](https://github.com/YUGESHKARAN/my_portfolio)
+[![Portfolio](https://img.shields.io/badge/GitHub-My_Portfolio-blue?logo=port)](https://my-portfolio-eta-three-28.vercel.app/)
 
 ## About
 
