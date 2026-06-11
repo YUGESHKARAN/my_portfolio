@@ -82,8 +82,9 @@ I am dedicated to expanding my knowledge base and contributing to innovative pro
 
 ## 📬 Contact
 
-- **GitHub:** [YUGESHKARAN](https://github.com/YUGESHKARAN)
 - **LinkedIn:** [Yugesh Karan](https://www.linkedin.com/in/yugeshkaran01/)
+- **Email:** [yugeshkaran01@gmail.com](yugeshkaran01@gmail.com)
+  
 
 ---
 
