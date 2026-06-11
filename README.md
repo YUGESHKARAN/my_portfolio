@@ -1,6 +1,6 @@
 # Yugeshkaran Panjamoorthi - Portfolio
 
-[![GitHub](https://img.shields.io/badge/GitHub-my_portfolio-blue?logo=github)](https://github.com/YUGESHKARAN/my_portfolio)
+[![Portfolio](https://img.shields.io/badge/GitHub-My_Portfolio-blue?logo=port)](https://my-portfolio-eta-three-28.vercel.app/)
 
 ## About
 
@@ -19,17 +19,18 @@ Welcome to my personal portfolio repository! I am a passionate data scientist an
 
 ## 🚀 Featured Projects
 
-### 1. [Clash of Clans Mini Language Model](https://github.com/YUGESHKARAN/Clash_of_Clans_Language_Model.git)
+### 1. [Bytes Base](https://github.com/YUGESHKARAN/Node-Blog-App.git)
+- **Description:** Tech Community Platform for academic institutions.
+- **Core Tech:** React.js, Tailwind CSS, Node.js, Express.js, JWT, Web-Socket.io, MongoDB, Redis, AWS-S3-bucket
+- **Associated Tech:** Pyhton, Flask, Langchain, PineconeDB, OpenAI, Llama-4-Scout-17B-16E-Instruct.  
+
+### 2. [Clash of Clans Mini Language Model](https://github.com/YUGESHKARAN/Clash_of_Clans_Language_Model.git)
 - **Description:** A mini language model from scratch using PyTorch (~2.96M parameters).
 - **Tech:** Flask, PyTorch, Transformers, Machine Learning, LLM
 
-### 2. [MySQL RAG](https://github.com/YUGESHKARAN/MySQL-RAG.git)
+### 3. [MySQL RAG](https://github.com/YUGESHKARAN/MySQL-RAG.git)
 - **Description:** High-level Retrieval Augmented Generation (RAG) system for MySQL databases.
 - **Tech:** Flask, LLM, MySQL-DB, Langchain
-
-### 3. [Node Blog App](https://github.com/YUGESHKARAN/Node-Blog-App.git)
-- **Description:** E-learning app for academic institutions.
-- **Tech:** React.js, Node.js, Socket.io, Express.js, MongoDB, Tailwind CSS, LLM, AWS-S3-bucket
 
 ### 4. [Pinecone AI App](https://github.com/YUGESHKARAN/pinecone_ai.git)
 - **Description:** Conversational chatbot integrated with Pinecone vector database.
@@ -81,8 +82,9 @@ I am dedicated to expanding my knowledge base and contributing to innovative pro
 
 ## 📬 Contact
 
-- **GitHub:** [YUGESHKARAN](https://github.com/YUGESHKARAN)
 - **LinkedIn:** [Yugesh Karan](https://www.linkedin.com/in/yugeshkaran01/)
+- **Email:** [yugeshkaran01@gmail.com](yugeshkaran01@gmail.com)
+  
 
 ---
 
