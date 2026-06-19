@@ -77,7 +77,8 @@ const Home = () => {
                   
                   <motion.p variants={itemVariants} className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-2xl">
                     {/* Full-Stack Developer specializing in modern web technologies. <br /> */}
-                    Ex - MERN Stack Developer Intern at Qunatim Sharq Innovative Solutions, Vellore.
+                    {/* Ex - MERN Stack Developer Intern at Qunatim Sharq Innovative Solutions, Vellore. */}
+                    Founder @Bytes Base - AI Assisted Tech Community Platform for Universities/Colleges
                   </motion.p>
                   
                   <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12">
@@ -104,13 +105,13 @@ const Home = () => {
                     </motion.a>
                   </motion.div>
                   
-                  <motion.div variants={itemVariants} className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 text-gray-400 text-sm sm:text-base">
+                  {/* <motion.div variants={itemVariants} className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 text-gray-400 text-sm sm:text-base">
                     <div className="flex items-center gap-2">
                       <Rocket size={16} />
                       <span>Available for freelance</span>
                     </div>
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse hidden sm:block"></div>
-                  </motion.div>
+                  </motion.div> */}
                 </div>
                 
                 {/* 3D Graphics */}
