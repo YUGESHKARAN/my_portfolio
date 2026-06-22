@@ -97,7 +97,7 @@ const Projects = () => {
     {
       id: 4,
       title: 'Pinecone AI App',
-      description: 'his project is a conversational chatbot integrated with the Pinecone vector database.',
+      description: 'This project is a conversational chatbot integrated with the Pinecone vector database.',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
       tags: ['Python','Flask', 'Langchain', 'LLM', 'Pinecone-DB', 'Hugingface-Embeddings'],
       githubUrl: 'https://github.com/YUGESHKARAN/pinecone_ai.git',
