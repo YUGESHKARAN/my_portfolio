@@ -76,7 +76,7 @@ const Projects = () => {
        {
       id: 7,
       title: 'Modern Attendance Software',
-      description: 'A robust backend service designed to correct and generate content for a social media application.',
+      description: 'Attendance Management System designed to solve common issues in traditional systems, like inefficient faculty interfaces and the time-consuming process of analyzing and visualizing student data with SQL queries. Leveraging modern web technologies and AI, our system provides a responsive, scalable solution that enhances both usability and data management efficiency.',
       image: ams,
       tags: ['Python', 'Langchain','LLM',  'PHP','Javascript', 'MySQL', 'HTML', 'SCSS'],
       githubUrl: 'https://github.com/YUGESHKARAN/dsu.git',
