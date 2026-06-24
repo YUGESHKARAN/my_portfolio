@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X,Phone, Github, Linkedin, Twitter } from 'lucide-react';
+import { Menu, X,Phone, Github, Linkedin, Twitter, Mail } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ const Navigation = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/YUGESHKARAN', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/yugeshkaran01', label: 'LinkedIn' },
-    { icon: Phone, href: 'tel:+917397592742', label: 'Phone' },
+    { icon: Email, href: 'tel:+917397592742', label: 'Phone' },
     // { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
   ];
 

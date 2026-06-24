@@ -12,12 +12,13 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-
+import { Analytics } from "@vercel/analytics/react"
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+       <Analytics/>
       <Toaster />
       <Sonner />
       <BrowserRouter>
