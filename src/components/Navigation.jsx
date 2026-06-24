@@ -19,7 +19,7 @@ const Navigation = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/YUGESHKARAN', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/yugeshkaran01', label: 'LinkedIn' },
-    { icon: Email, href: 'tel:+917397592742', label: 'Phone' },
+    { icon: Mail, href: 'mailto:yugeshkaran01@gmail.com', label: 'Email' },
     // { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
   ];
 
