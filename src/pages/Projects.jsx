@@ -12,6 +12,7 @@ import draftmate from "../images/DraftMate_AI.png";
 import bytesbase from "../images/bytes_base_logo.png";
 import ams from "../images/attendance_app.png";
 import mentor_agent from "../images/mentor_consulting_crewai.png"
+import indicResearchScholar from "../images/indic_research_scholar.png"
 
 
 
@@ -28,10 +29,20 @@ const Projects = () => {
       image: bytesbase,
       tags: ['React.js', 'Node.js','Socket.io', 'Express.js', 'MongoDB','Tailwind CSS','LLM','AWS-S3-bucket'],
       githubUrl: 'https://github.com/YUGESHKARAN/Node-Blog-App.git',
-      liveUrl: 'https://www.bytesbase.me/',
+      liveUrl: 'https://www.bytesbase.me',
       featured: true,
     },
 
+     {
+      id: 13,
+      title: 'Indic Research Scholar',
+      description: "An AI research assistant that lets students, scholars, and researchers upload academic papers and understand them in their own Indic language.",
+      image: indicResearchScholar,
+      tags: ['Sarvam 105B LLM', 'Sarvam Vision', 'Flask', 'PineconeDB', 'React.js', 'Node.js', 'Express.js', 'MongoDB','Tailwind CSS'],
+      githubUrl: 'https://github.com/YUGESHKARAN/indic_research_scholar.git',
+      liveUrl: 'https://indic-research-scholar.vercel.app',
+      featured: true,
+    },
     {
       id: 9,
       title: 'Product Control Agent',
@@ -83,6 +94,27 @@ const Projects = () => {
       liveUrl: 'https://drive.google.com/file/d/1jHUP9t4RTKGnAPelD6cebAlraN8e9LLM/view?usp=sharing',
       featured: true,
     },
+       {
+      id: 6,
+      title: 'DraftMate AI',
+      description: 'Content co-worker for a Tech Community platform, designed to refine post content into a standardized Markdown format.',
+      image: draftmate,
+      tags: ['Python', 'Flask', 'LLM', 'Langchain'],
+      githubUrl: 'https://github.com/YUGESHKARAN/blogChat-backend.git',
+      liveUrl: 'https://blog-frontend-teal-ten.vercel.app/',
+      featured: true,
+    },
+ 
+     {
+      id: 8,
+      title: 'Recommnedation System',
+      description: 'The Python-based recommendation system designed for an Tech-Community fullstack application. The primary function of this system is to recommend authors (users) using a graph data structure, optimizing user engagement and network building within the platform.',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
+      tags: ['Python', 'Flask', 'MongoDB', 'Graph-Data-Structure'],
+      githubUrl: 'https://github.com/YUGESHKARAN/recommendation-system.git',
+      liveUrl: 'https://blog-frontend-teal-ten.vercel.app/',
+      featured: true,
+    },
     {
       id: 3,
       title: 'MySQL RAG App ',
@@ -115,27 +147,7 @@ const Projects = () => {
       liveUrl: 'https://drive.google.com/file/d/1vQUqu1ivm6bmE93UgNA33q0TNe8KFEto/view?usp=sharing',
       featured: true,
     },
-     {
-      id: 6,
-      title: 'DraftMate AI',
-      description: 'Content co-worker for a Tech Community platform, designed to refine post content into a standardized Markdown format.',
-      image: draftmate,
-      tags: ['Python', 'Flask', 'LLM', 'Langchain'],
-      githubUrl: 'https://github.com/YUGESHKARAN/blogChat-backend.git',
-      liveUrl: 'https://blog-frontend-teal-ten.vercel.app/',
-      featured: true,
-    },
- 
-     {
-      id: 8,
-      title: 'Recommnedation System',
-      description: 'The Python-based recommendation system designed for an Tech-Community fullstack application. The primary function of this system is to recommend authors (users) using a graph data structure, optimizing user engagement and network building within the platform.',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop',
-      tags: ['Python', 'Flask', 'MongoDB', 'Graph-Data-Structure'],
-      githubUrl: 'https://github.com/YUGESHKARAN/recommendation-system.git',
-      liveUrl: 'https://blog-frontend-teal-ten.vercel.app/',
-      featured: true,
-    },
+  
   
     {
       id: 10,
@@ -246,7 +258,7 @@ const Projects = () => {
                     )}
                   </div>
                   
-                  <div className="md:p-6 p-4">
+                  <div className="md:p-6  p-4">
                     <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
                     <p className="text-gray-300 mb-4 line-clamp-4">{project.description}</p>
                     
@@ -266,21 +278,23 @@ const Projects = () => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-gray-400 hover:text-white transition-colors"
+                        className="flex text-sm items-center text-gray-400 hover:text-white transition-colors"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        <Github size={18} className="mr-2" />
+                        
                         Code
+                        <Github size={14} className="ml-1" />
                       </a>
                       <a
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center text-gray-400 hover:text-white transition-colors"
+                        className="flex text-sm items-center text-gray-400 hover:text-white transition-colors"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        <ExternalLink size={18} className="mr-2" />
-                         Demo
+                        
+                         Try It
+                         <ExternalLink size={14} className="ml-1" />
                       </a>
                     </div>
                   </div>
@@ -353,7 +367,7 @@ const Projects = () => {
                       className="flex items-center bg-blue-600 hover:bg-blue-700 md:text-base text-xs  text-white md:px-6 md:py-3 py-2 px-3 rounded-lg transition-colors"
                     >
                       <ExternalLink size={20} className="mr-2" />
-                      Live Demo
+                      Try It
                     </a>
                   </div>
                 </div>
